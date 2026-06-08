@@ -1,4 +1,4 @@
-"""def display_message(name):
+def display_message(name):
     print("I am learning about function in Python, ", name, "!")
 display_message("Nare")
 def describe_pet(animal_type, pet_name):
@@ -47,119 +47,119 @@ def my_list(first_list):
         if x % 2 == 0:
             empty_list.append(x)
     return empty_list
-print(my_list([2,6,11,15,18]))"""
-# def arthimetic(num1, num2):
-    # add = num1 + num2
-    # div = num1 / num2
-    # sub =  num1 - num2
-    # mul = num1 * num2
-    # return add, div, sub, mul
-# a,b,c,d = arthimetic(10,5)
-# print("sub = ",c)
-# print("mul = ",d)
-# print("div = ",b)
-# print("add = ",a)
-# gobal_lang = 'DataScience'
-# def var_scope_test():
-    # local_lang = 'Python'
-    # print(local_lang)
-    # printglobal_lang)
-# var_scope_test()
-# print(local_lang)
-# global_lang = 888
-# def function1():
-    # print("The vale of ", global_lang)
-# def function2():
-#    global global_lang 
-#    global_lang = 44
-#    print("I change " , global_lang)
+print(my_list([2,6,11,15,18]))
+def arthimetic(num1, num2):
+    add = num1 + num2
+    div = num1 / num2
+    sub =  num1 - num2
+    mul = num1 * num2
+    return add, div, sub, mul
+a,b,c,d = arthimetic(10,5)
+print("sub = ",c)
+print("mul = ",d)
+print("div = ",b)
+print("add = ",a)
+gobal_lang = 'DataScience'
+def var_scope_test():
+    local_lang = 'Python'
+    print(local_lang)
+    printglobal_lang)
+var_scope_test()
+print(local_lang)
+global_lang = 888
+def function1():
+    print("The vale of ", global_lang)
+def function2():
+   global global_lang 
+   global_lang = 44
+   print("I change " , global_lang)
  
-# function1()
-# function2()  
-# print(global_lang)
-# def greet_user(name):
-    # def greet():
-        # return f"Hello, {name}!"
+function1()
+function2()  
+print(global_lang)
+def greet_user(name):
+    def greet():
+        return f"Hello, {name}!"
 
-    # return greet()
+    return greet()
 
-# print(greet_user("Alice"))d\
-# def calculate_area(shape,dimension):
-    # def circle_area(radius):
-        # return 3.1 * radius * radius
-    # def squere_area(side):
-        # return side*3
+print(greet_user("Alice"))d\
+def calculate_area(shape,dimension):
+    def circle_area(radius):
+        return 3.1 * radius * radius
+    def squere_area(side):
+        return side*3
     
 
-    # if shape == 'circle':
-        # return circle_area(dimension)
-    # elif shape == 'square':
-        # return  squere_area(dimension)
+    if shape == 'circle':
+        return circle_area(dimension)
+    elif shape == 'square':
+        return  squere_area(dimension)
 
 
-# print(calculate_area("circle",5))
-# print(calculate_area("square",6))
-# def multiplier(factor):
-    # def multiply_by(n):
-        # return n * factor
+print(calculate_area("circle",5))
+print(calculate_area("square",6))
+def multiplier(factor):
+    def multiply_by(n):
+        return n * factor
 
-    # return multiply_by
-# multiply_by_3 = multiplier(3)
-# print(multiply_by_3(10))  
+    return multiply_by
+multiply_by_3 = multiplier(3)
+print(multiply_by_3(10))  
 
-# multiply_by_5 = multiplier(5)
-# print(multiply_by_5(10)) 
-# def power(exponent):
-    # def raise_to_power(base):
-        # return base ** exponent
-    # return raise_to_power
-# square = power(2)
-# cube = power(3)
+multiply_by_5 = multiplier(5)
+print(multiply_by_5(10)) 
+def power(exponent):
+    def raise_to_power(base):
+        return base ** exponent
+    return raise_to_power
+square = power(2)
+cube = power(3)
 
-# print(square(4))
-# print(cube(9))
-# def make_adder(x):
-    # def make_adder_by(base):
-        # return base ** x
-    # return make_adder_by
-# deff = make_adder(3)
-# serr = make_adder(2)
-# print(deff(7))
-# print(serr(8))
-# def my_decorator(func):
-    # def wrapper():
-        # print("Something is happening before the function is called.")
-        # func()
-        # print("Something is happening after the function is called.")
+print(square(4))
+print(cube(9))
+def make_adder(x):
+    def make_adder_by(base):
+        return base ** x
+    return make_adder_by
+deff = make_adder(3)
+serr = make_adder(2)
+print(deff(7))
+print(serr(8))
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
 
-    # return wrapper
+    return wrapper
 
-# @my_decorator
-# def say_hello():
-    # print("Hello!")
+@my_decorator
+def say_hello():
+    print("Hello!")
 
-# say_hello()
-# def example(a,b):
-    # if a * b <= 1000:
-        # return a * b
-    # else:
-        # return a + b
-# a =int(input(" a = "))
-# b =int( input(" b = "))
-# print(example(a , b))
-# previus = 0
-# for current in range(10):
-    # total = current + previus
-    # print(current, previus)
-    # previus = current
-    # print(current, previus)
-# my_list = []
-# for i in range(2000,3300):
-    # if i%7 == 0 and i % 5 != 0:
-        # my_list.append(str(i))
-# print(my_list)
-# n = int(input("n = "))
-# d = dict()
-# for i in range(1,n+1):
-    # d[i] = i*i
-# print(d)
+say_hello()
+def example(a,b):
+    if a * b <= 1000:
+        return a * b
+    else:
+        return a + b
+a =int(input(" a = "))
+b =int( input(" b = "))
+print(example(a , b))
+previus = 0
+for current in range(10):
+    total = current + previus
+    print(current, previus)
+    previus = current
+    print(current, previus)
+my_list = []
+for i in range(2000,3300):
+    if i%7 == 0 and i % 5 != 0:
+        my_list.append(str(i))
+print(my_list)
+n = int(input("n = "))
+d = dict()
+for i in range(1,n+1):
+    d[i] = i*i
+print(d)
